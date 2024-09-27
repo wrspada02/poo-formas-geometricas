@@ -4,7 +4,7 @@ public abstract class Tridimensional extends Forma {
 	private double altura;
 	
 	public double getLargura() {
-		return largura;
+		return this.largura;
 	}
 	
 	public void setLargura(double largura) {
@@ -12,7 +12,7 @@ public abstract class Tridimensional extends Forma {
 	}
 	
 	public double getProfundidade() {
-		return profundidade;
+		return this.profundidade;
 	}
 	
 	public void setProfundidade(double profundidade) {
@@ -20,7 +20,7 @@ public abstract class Tridimensional extends Forma {
 	}
 	
 	public double getAltura() {
-		return altura;
+		return this.altura;
 	}
 	
 	public void setAltura(double altura) {
@@ -32,4 +32,6 @@ public abstract class Tridimensional extends Forma {
 	}
 	
 	public abstract double volume();
+	
+	public abstract double area();
 }

@@ -13,13 +13,12 @@ public class TrianguloEquilatero extends Bidimensional {
 
 	@Override
 	public void print() {
-		System.out.println(super.toString());
-		this.area();
+		System.out.println(super.toString() + " A area do triângulo é de: " + this.area());
 	}
 
 	@Override
-	public void area() {
-		System.out.println("A area do triangulo equilatero e de: " + this.getLargura()*this.getComprimento()/2);
+	public double area() {
+		return this.getLargura()*this.getComprimento()/2;
 	}
 	
 }

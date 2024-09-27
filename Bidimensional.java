@@ -3,7 +3,7 @@ public abstract class Bidimensional extends Forma {
 	private double largura;
 	
 	public double getComprimento() {
-		return comprimento;
+		return this.comprimento;
 	}
 	
 	public void setComprimento(double comprimento) {
@@ -11,16 +11,16 @@ public abstract class Bidimensional extends Forma {
 	}
 	
 	public double getLargura() {
-		return largura;
+		return this.largura;
 	}
 	
 	public void setLargura(double largura) {
 		this.largura = largura;
 	}
 	
-	public abstract void area();
-	
 	public String toString() {
 		return super.toString() + ", Comprimento: " + this.comprimento + ", Largura: " + this.largura;
 	}
+	
+	public abstract double area();
 }

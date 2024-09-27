@@ -3,7 +3,7 @@ public abstract class Forma implements Shape {
 	private int dimensao;
 	
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
 	
 	public void setNome(String nome) {
@@ -11,7 +11,7 @@ public abstract class Forma implements Shape {
 	}
 	
 	public int getDimensao() {
-		return dimensao;
+		return this.dimensao;
 	}
 
 	public void setDimensao(int dimensao) {
@@ -20,7 +20,6 @@ public abstract class Forma implements Shape {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return "Nome: " + this.nome + ", Dimensão: " + this.dimensao;
 	}
 }
